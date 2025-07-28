@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @import "tailwindcss";
+
+   
+        /* 
+        STEP 1: Color variables are provided for you
+        These are the colors you'll use to create your custom theme
+        */
+        :root {
+            --color-text-base: #ffffff;
+            --color-text-muted: #fecaca;
+            --color-text-inverted: #dc2626;
+            --color-fill: #b91c1c;
+            --color-button-accent: #ffffff;
+            --color-button-accent-hover: #fef2f2;
+            --color-button-muted: #ef4444;
+            --color-button-muted-hover:#f74646;
+        }
+
+        /*  
+        TASK 1: Create your custom theme using @theme
+        This is the modern way to define custom colors in Tailwind CSS v4
+        
+        Your task:
+        - Map each root variable to a theme color name
+        - Use kebab-case naming (example: btn-muted, not btnMuted)
+        - This will let you use classes like: bg-base, text-inverted, hover:bg-btn-muted-hover
+        
+        Example format:
+        --color-base: var(--color-text-base);
+        --color-muted: var(--color-text-muted);
+        
+        Create theme colors for:
+        - base (white color for text and buttons)
+        - muted (light pink color) 
+        - inverted (red color for text)
+        - fill (dark red for backgrounds)
+        - hover (light pink for hover states)
+        - btn-muted (red for secondary button)
+        - btn-muted-hover (lighter red for secondary button hover)
+        */
+        @theme {
+            /* 
+            TODO: Create your custom theme colors here
+            Remember to use the format: --color-name: var(--root-variable-name);
+            */
+        }
+
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+
+    <!-- 
+    TASK 2: Add the correct background color to the main card
+    
+    Instructions:
+    - Look at the root variables above
+    - Find the variable for the main background (dark red)
+    - Use the correct Tailwind class with your theme color
+    
+    Hint: You need bg-[theme-color-name] or clean up the classes
+    -->
+
+    <div class="rounded-md max-w-4xl 
+    mx-auto overflow-hidden m-2 text-center max-w-700px] p-8">
+
+
+        <!-- 
+        TASK 3: Add the correct text color for the heading
+        
+        Instructions:
+        - The heading should be white text
+        - Use your custom theme color for white text
+        -->
+        <h1 class="text-3xl font-extrabold leading-12">
+            <span class="block">Focus on your content.</span>
+            <span class="block">We handle the distribution.</span>
+        </h1>
+
+
+        <!-- 
+        TASK 4: Add the correct text color for the paragraph
+        
+        Instructions:
+        - The paragraph should also be white text
+        - Use the same theme color as the heading
+        -->
+        <p class="leading-15 text-base">Learn as much as you can. Give the best you have and never give up</p>
+
+
+        <div class="flex justify-center items-center gap-[30px] flex-wrap">
+
+
+            <!-- 
+            TASK 5: Complete the "Get started" button styling
+            
+            Instructions:
+            1. Background color: Use your theme color for white background
+            2. Hover background color: Use your theme color for light pink hover
+            3. Text color : Use your theme color inverted.
+            
+             Hint: Make sure your theme color names match these class names exactly!
+            -->
+
+
+            <button class="pt-1 pb-1 rounded-md w-[150px] h-[40px]">Get
+                started</button>
+
+            <!-- 
+            TASK 6: Complete the "Live demo" button styling
+            
+            Instructions:
+            1. Background color: Use your theme color for red background  
+            2. Text color: Use your theme color for white text
+            3. Hover background color: Use your theme color for lighter red hover
+            
+            Hint: Make sure your theme color names match these class names exactly!
+            -->
+            <button class=" p-1 rounded-md w-[150px] h-[40px] ">Live
+                demo</button>
+        </div>
+    </div>
+</body>
+
+</html>
